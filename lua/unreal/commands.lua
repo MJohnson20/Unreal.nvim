@@ -185,42 +185,42 @@ function Commands._CreateConfigFile(configFilePath, projectName)
             "Configuration" : "DebugGame",
             "withEditor" : true,
             "UbtExtraFlags" : "",
-            "PlatformName" : "Win64"
+            "PlatformName" : "Linux"
         },
         {
             "TargetName" : "]] .. projectName .. [[",
             "Configuration" : "DebugGame",
             "withEditor" : false,
             "UbtExtraFlags" : "",
-            "PlatformName" : "Win64"
+            "PlatformName" : "Linux"
         },
         {
             "TargetName" : "]] .. projectName .. [[-Editor",
             "Configuration" : "Development",
             "withEditor" : true,
             "UbtExtraFlags" : "",
-            "PlatformName" : "Win64"
+            "PlatformName" : "Linux"
         },
         {
             "TargetName" : "]] .. projectName .. [[",
             "Configuration" : "Development",
             "withEditor" : false,
             "UbtExtraFlags" : "",
-            "PlatformName" : "Win64"
+            "PlatformName" : "Linux"
         },
         {
             "TargetName" : "]] .. projectName .. [[-Editor",
             "Configuration" : "Shipping",
             "withEditor" : true,
             "UbtExtraFlags" : "",
-            "PlatformName" : "Win64"
+            "PlatformName" : "Linux"
         },
         {
             "TargetName" : "]] .. projectName .. [[",
             "Configuration" : "Shipping",
             "withEditor" : false,
             "UbtExtraFlags" : "",
-            "PlatformName" : "Win64"
+            "PlatformName" : "Linux"
         }
     ]
 }
@@ -660,7 +660,7 @@ function InitializeCurrentGenData()
         return false
     end
 
-    CurrentGenData.ubtPath = "\"" .. CurrentGenData.config.EngineDir .."/Engine/Binaries/DotNET/UnrealBuildTool/UnrealBuildTool\""
+    CurrentGenData.ubtPath = "\"" .. CurrentGenData.config.EngineDir .."/Engine/Binaries/Linux/UnrealBuildTool/UnrealBuildTool\""
     CurrentGenData.ueBuildBat = "\"" .. CurrentGenData.config.EngineDir .."/Engine/Build/BatchFiles/Linux/Build.sh\""
     CurrentGenData.projectPath = "\"" .. CurrentGenData.prjDir .. "/" .. 
         CurrentGenData.prjName .. ".uproject\""
