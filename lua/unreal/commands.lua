@@ -317,6 +317,7 @@ function ExtractRSP(rsppath)
         "Engine/Source/Runtime/Core/Public/Misc/EnumRange.h"
     }
 
+    log("jabbah jabbah jabbah")
     PrintAndLogMessage(rsppath)
 
     local lines = {}
