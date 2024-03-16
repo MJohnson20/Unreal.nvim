@@ -322,6 +322,7 @@ function ExtractRSP(rsppath)
     local lines = {}
     local isFirstLine = true
     local lineNb = 0;
+    log ("Blah blah blah " .. rsppath)
     for line in io.lines(rsppath) do
         log(tostring("Hello, is it me you're looking for?"))
         local discardLine = true
