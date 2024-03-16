@@ -486,8 +486,8 @@ function Stage_UbtGenCmd()
             -- content = content .. "matched:\n"
             i,j = line:find("%@")
             if i then
-                local _,endpos = line:find("\"", j)
-                local rsppath = line:sub(j+1, endpos-1)
+                local _,endpos = line:find("\"", j+1)
+                local rsppath = line:sub(j+2, endpos-1)
                 if rsppath then
                     local newrsppath = rsppath .. ".clang.rsp"
 
