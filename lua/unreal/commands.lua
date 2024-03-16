@@ -140,7 +140,7 @@ Commands.onStatusUpdate = function()
 end
 
 function Commands:Inspect(objToInspect)
-    if not vim.g.unrealnvim_debug then return end
+    if true then return end
     if not objToInspect then
         log(objToInspect)
         return
