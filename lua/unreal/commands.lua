@@ -317,13 +317,13 @@ function ExtractRSP(rsppath)
         "Engine/Source/Runtime/Core/Public/Misc/EnumRange.h"
     }
 
-    rsppath = rsppath:gsub("\\\\","/")
     PrintAndLogMessage(rsppath)
 
     local lines = {}
     local isFirstLine = true
     local lineNb = 0;
     for line in io.lines(rsppath) do
+        log(tostring("Hello, is it me you're looking for?"))
         local discardLine = true
 
         -- ignored lines
