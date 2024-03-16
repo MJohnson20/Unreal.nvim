@@ -485,11 +485,15 @@ function Stage_UbtGenCmd()
 
             -- content = content .. "matched:\n"
             i,j = line:find("%@")
+            log("i,j: " .. i .. "," .. j)
             if i then
                 local _,endpos = line:find("\"", j+1)
+                log("endpos: " .. endpos)
                 local rsppath = line:sub(j+2, endpos-1)
+                log("rsppath: " .. rsppath)
                 if rsppath then
                     local newrsppath = rsppath .. ".clang.rsp"
+                    log("newrsppath: " .. newrsppath)
 
                     -- rewrite rsp contents
                     if not shouldSkipFile then
