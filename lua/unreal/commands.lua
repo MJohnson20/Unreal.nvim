@@ -489,7 +489,7 @@ function Stage_UbtGenCmd()
             if i then
                 local _,endpos = line:find("\"", j+3)
                 log("endpos: " .. endpos)
-                local rsppath = line:sub(j+4, endpos-1)
+                local rsppath = line:sub(j+4, endpos-2)
                 log("rsppath: " .. rsppath)
                 if rsppath then
                     local newrsppath = rsppath .. ".clang.rsp"
